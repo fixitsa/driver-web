@@ -15,15 +15,17 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "botman/botman": "~3.0"
+        "php": ">=8.0",
+        "botman/botman": "*"
     },
+    "repositories": [{
+        "type": "path",
+        "url": "../botman"
+    }],
     "require-dev": {
-        "botman/studio-addons": "~1.0",
-        "illuminate/support": "~5.5.0",
-        "phpunit/phpunit": "~5.0",
-        "mockery/mockery": "dev-master",
-        "botman/driver-facebook": "~2.0",
+        "illuminate/support": "^9.1",
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5",
         "ext-curl": "*"
     },
     "autoload": {

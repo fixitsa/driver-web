@@ -232,14 +232,14 @@ class WebDriver extends HttpDriver
         // Reset replies
         $this->replies = [];
 
-        Response::create(json_encode([
+        (new Response(json_encode([
             'status' => $this->replyStatusCode,
             'messages' => $messages,
         ]), $this->replyStatusCode, [
             'Content-Type' => 'application/json',
             'Access-Control-Allow-Credentials' => true,
             'Access-Control-Allow-Origin' => '*',
-        ])->send();
+        ]))->send();
     }
 
     /**
