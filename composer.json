@@ -19,9 +19,9 @@
         "botman/botman": "*"
     },
     "repositories": [{
-        "type": "path",
-        "url": "../botman"
-    }],
+            "type": "vcs",
+            "url": "https://github.com/fixitsa/botman.git"
+        }],
     "require-dev": {
         "illuminate/support": "^9.1",
         "phpunit/phpunit": "^9.5",
